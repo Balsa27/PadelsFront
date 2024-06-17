@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "padelapp_Design_a_1024X1024_square_iOS_app_icon_featuring_a_pad_fbbeb313-ec75-485c-9849-9cc4237cab6d.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

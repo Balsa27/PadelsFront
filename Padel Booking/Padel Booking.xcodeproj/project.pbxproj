@@ -1,0 +1,949 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		650B25852B04E0840058A665 /* HourMinutePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B25842B04E0840058A665 /* HourMinutePicker.swift */; };
+		650B25872B04E54F0058A665 /* MultiImagePickerViewSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B25862B04E54F0058A665 /* MultiImagePickerViewSwift.swift */; };
+		650B25892B04EA730058A665 /* View+FocusablePadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B25882B04EA730058A665 /* View+FocusablePadding.swift */; };
+		650B258B2B0508E10058A665 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B258A2B0508E10058A665 /* LoginUseCase.swift */; };
+		650B258E2B0567E90058A665 /* SignUpUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B258D2B0567E90058A665 /* SignUpUseCase.swift */; };
+		650B25902B056A9D0058A665 /* String+isValidEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B258F2B056A9D0058A665 /* String+isValidEmail.swift */; };
+		654202932AFFCA7B002AB115 /* NavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654202922AFFCA7B002AB115 /* NavigationUtil.swift */; };
+		654202952AFFCB53002AB115 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654202942AFFCB53002AB115 /* AppState.swift */; };
+		654202A22B001F89002AB115 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 654202A12B001F89002AB115 /* PopupView */; };
+		654202A52B0029DD002AB115 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654202A42B0029DD002AB115 /* MapView.swift */; };
+		654202A82B002C86002AB115 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654202A72B002C86002AB115 /* LocationManager.swift */; };
+		654202AA2B010A4C002AB115 /* MapRoutingSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654202A92B010A4C002AB115 /* MapRoutingSheetView.swift */; };
+		654202AC2B038D63002AB115 /* View+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654202AB2B038D63002AB115 /* View+Placeholder.swift */; };
+		654202AE2B03FE55002AB115 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654202AD2B03FE55002AB115 /* APIRequest.swift */; };
+		6561665E2B04C4C30053B563 /* CourtOwnerBookingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561665D2B04C4C30053B563 /* CourtOwnerBookingProvider.swift */; };
+		656166602B04C5610053B563 /* UserBookingsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561665F2B04C5610053B563 /* UserBookingsProvider.swift */; };
+		656166622B04C5AD0053B563 /* UpdateCourtProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656166612B04C5AD0053B563 /* UpdateCourtProvider.swift */; };
+		656166642B04C6740053B563 /* AuthenticationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656166632B04C6740053B563 /* AuthenticationProvider.swift */; };
+		656166672B04D6180053B563 /* CourtsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656166662B04D6180053B563 /* CourtsListView.swift */; };
+		656166692B04D7E40053B563 /* CourtDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656166682B04D7E40053B563 /* CourtDetailsView.swift */; };
+		6561666B2B04D7EC0053B563 /* EditCourtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561666A2B04D7EC0053B563 /* EditCourtView.swift */; };
+		6561666D2B04DD4C0053B563 /* CourtLocationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561666C2B04DD4C0053B563 /* CourtLocationPickerView.swift */; };
+		656B9AE22B078D3B006899A7 /* UserBookingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B9AE12B078D3B006899A7 /* UserBookingProvider.swift */; };
+		656CE9FA2B0E367500074D1C /* CreateACourtUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CE9F92B0E367500074D1C /* CreateACourtUseCase.swift */; };
+		656CE9FC2B0E3CA300074D1C /* CourtsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CE9FB2B0E3CA300074D1C /* CourtsProvider.swift */; };
+		656CE9FF2B0E408400074D1C /* StringTimestampToDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CE9FE2B0E408400074D1C /* StringTimestampToDouble.swift */; };
+		656CEA052B0E66B800074D1C /* GetAllCourtsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CEA042B0E66B800074D1C /* GetAllCourtsUseCase.swift */; };
+		656CEA072B0E744400074D1C /* UserAccountProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CEA062B0E744400074D1C /* UserAccountProvider.swift */; };
+		656CEA0A2B0E77F000074D1C /* CourtBookingsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CEA092B0E77F000074D1C /* CourtBookingsProvider.swift */; };
+		656E09642B1CC389009F5022 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656E09632B1CC389009F5022 /* CustomSegmentedControl.swift */; };
+		6584DFBB2AB05E7700F1F069 /* PadelBookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFBA2AB05E7700F1F069 /* PadelBookingApp.swift */; };
+		6584DFBD2AB05E7700F1F069 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFBC2AB05E7700F1F069 /* OnboardingView.swift */; };
+		6584DFBF2AB05E7800F1F069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6584DFBE2AB05E7800F1F069 /* Assets.xcassets */; };
+		6584DFC22AB05E7800F1F069 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6584DFC12AB05E7800F1F069 /* Preview Assets.xcassets */; };
+		6584DFCC2AB0601500F1F069 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6584DFCB2AB0601500F1F069 /* Images.xcassets */; };
+		6584DFCE2AB0601E00F1F069 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6584DFCD2AB0601E00F1F069 /* Colors.xcassets */; };
+		6584DFD12AB063F000F1F069 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFD02AB063F000F1F069 /* ButtonStyles.swift */; };
+		6584DFD32AB0685300F1F069 /* TextStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFD22AB0685300F1F069 /* TextStyles.swift */; };
+		6584DFD52AB06BB200F1F069 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFD42AB06BB200F1F069 /* LoginView.swift */; };
+		6584DFD72AB06BB800F1F069 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFD62AB06BB800F1F069 /* SignUpView.swift */; };
+		6584DFD92AB0717E00F1F069 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFD82AB0717E00F1F069 /* PasswordTextField.swift */; };
+		6584DFDB2AB072E300F1F069 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFDA2AB072E300F1F069 /* ForgotPasswordView.swift */; };
+		6584DFDE2AB0763900F1F069 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 6584DFDD2AB0763900F1F069 /* SFSafeSymbols */; };
+		6584DFE02AB077E400F1F069 /* CourtOwnerTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFDF2AB077E400F1F069 /* CourtOwnerTabBarView.swift */; };
+		6584DFE22AB0786C00F1F069 /* UserTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFE12AB0786C00F1F069 /* UserTabBarView.swift */; };
+		6584DFE62AB07BF800F1F069 /* CourtOwnerBookingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFE52AB07BF800F1F069 /* CourtOwnerBookingsView.swift */; };
+		6584DFE82AB07C0E00F1F069 /* CourtOwnerRequestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFE72AB07C0E00F1F069 /* CourtOwnerRequestsView.swift */; };
+		6584DFEA2AB07C2300F1F069 /* UserBookingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFE92AB07C2300F1F069 /* UserBookingsView.swift */; };
+		6584DFEC2AB07C3400F1F069 /* CourtOwnerAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFEB2AB07C3400F1F069 /* CourtOwnerAccountView.swift */; };
+		6584DFEE2AB088B600F1F069 /* View+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFED2AB088B600F1F069 /* View+SafeArea.swift */; };
+		6584DFF12AB097B800F1F069 /* InfiniteCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 6584DFF02AB097B800F1F069 /* InfiniteCalendar */; };
+		6584DFFA2AB1B79200F1F069 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFF92AB1B79200F1F069 /* Booking.swift */; };
+		6584DFFC2AB1BBFC00F1F069 /* Date+DateFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFFB2AB1BBFC00F1F069 /* Date+DateFrom.swift */; };
+		6584DFFE2AB1C1F800F1F069 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584DFFD2AB1C1F800F1F069 /* NetworkingService.swift */; };
+		6584E0012AB1C22B00F1F069 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 6584E0002AB1C22B00F1F069 /* KeychainAccess */; };
+		6584E0032AB1C24B00F1F069 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584E0022AB1C24B00F1F069 /* NetworkSession.swift */; };
+		6584E0062AB1C35100F1F069 /* KeychainProvidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584E0052AB1C35100F1F069 /* KeychainProvidable.swift */; };
+		6584E0092AB1C3A600F1F069 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584E0082AB1C3A600F1F069 /* Session.swift */; };
+		6584E00B2AB1C42100F1F069 /* SessionOperable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584E00A2AB1C42100F1F069 /* SessionOperable.swift */; };
+		6584E00E2AB1C45E00F1F069 /* UserDefaultsProvidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584E00D2AB1C45E00F1F069 /* UserDefaultsProvidable.swift */; };
+		6584E0142AB1C59400F1F069 /* AcceptBookingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584E0132AB1C59400F1F069 /* AcceptBookingUseCase.swift */; };
+		6584E0162AB1C5F600F1F069 /* RejectBookingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584E0152AB1C5F600F1F069 /* RejectBookingUseCase.swift */; };
+		6584E0182AB1C60C00F1F069 /* EditBookingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584E0172AB1C60C00F1F069 /* EditBookingUseCase.swift */; };
+		6584E01A2AB1C88000F1F069 /* AppDependenciesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584E0192AB1C88000F1F069 /* AppDependenciesContainer.swift */; };
+		6584E01C2AB1C94E00F1F069 /* CancelBookingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584E01B2AB1C94E00F1F069 /* CancelBookingUseCase.swift */; };
+		6584E01E2AB1D7FE00F1F069 /* Court.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584E01D2AB1D7FE00F1F069 /* Court.swift */; };
+		6584E0202AB1E7DF00F1F069 /* UserBookingDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584E01F2AB1E7DE00F1F069 /* UserBookingDetailsView.swift */; };
+		6584E0222AB3049F00F1F069 /* BookACourtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584E0212AB3049F00F1F069 /* BookACourtView.swift */; };
+		6584E0242AB30F6000F1F069 /* CreateABookingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584E0232AB30F6000F1F069 /* CreateABookingUseCase.swift */; };
+		6584E0262AB3380500F1F069 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584E0252AB3380500F1F069 /* Toast.swift */; };
+		65906DB52AF6D223000E952E /* SkeletonUI in Frameworks */ = {isa = PBXBuildFile; productRef = 65906DB42AF6D223000E952E /* SkeletonUI */; };
+		65C286DC2BE51305002DFC1E /* AnimatedSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C286DB2BE51305002DFC1E /* AnimatedSecureTextField.swift */; };
+		65C286DE2BE51483002DFC1E /* AnimatedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C286DD2BE51483002DFC1E /* AnimatedTextField.swift */; };
+		65D6C1352B18F75A003B950F /* GetAllPendingBookingsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D6C1342B18F75A003B950F /* GetAllPendingBookingsUseCase.swift */; };
+		65D6C1382B19E7EC003B950F /* PendingBookingsProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D6C1372B19E7EC003B950F /* PendingBookingsProviderProtocol.swift */; };
+		65D6C13A2B19EE34003B950F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D6C1392B19EE34003B950F /* User.swift */; };
+		65EA9EDD2AB5B89900B54CE1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9EDC2AB5B89900B54CE1 /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		650B25842B04E0840058A665 /* HourMinutePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMinutePicker.swift; sourceTree = "<group>"; };
+		650B25862B04E54F0058A665 /* MultiImagePickerViewSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiImagePickerViewSwift.swift; sourceTree = "<group>"; };
+		650B25882B04EA730058A665 /* View+FocusablePadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+FocusablePadding.swift"; sourceTree = "<group>"; };
+		650B258A2B0508E10058A665 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		650B258C2B050B5B0058A665 /* Padel-Booking-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Padel-Booking-Info.plist"; sourceTree = SOURCE_ROOT; };
+		650B258D2B0567E90058A665 /* SignUpUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUseCase.swift; sourceTree = "<group>"; };
+		650B258F2B056A9D0058A665 /* String+isValidEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+isValidEmail.swift"; sourceTree = "<group>"; };
+		654202922AFFCA7B002AB115 /* NavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUtil.swift; sourceTree = "<group>"; };
+		654202942AFFCB53002AB115 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		654202A42B0029DD002AB115 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		654202A72B002C86002AB115 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		654202A92B010A4C002AB115 /* MapRoutingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRoutingSheetView.swift; sourceTree = "<group>"; };
+		654202AB2B038D63002AB115 /* View+Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Placeholder.swift"; sourceTree = "<group>"; };
+		654202AD2B03FE55002AB115 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		6561665D2B04C4C30053B563 /* CourtOwnerBookingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtOwnerBookingProvider.swift; sourceTree = "<group>"; };
+		6561665F2B04C5610053B563 /* UserBookingsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBookingsProvider.swift; sourceTree = "<group>"; };
+		656166612B04C5AD0053B563 /* UpdateCourtProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCourtProvider.swift; sourceTree = "<group>"; };
+		656166632B04C6740053B563 /* AuthenticationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationProvider.swift; sourceTree = "<group>"; };
+		656166662B04D6180053B563 /* CourtsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtsListView.swift; sourceTree = "<group>"; };
+		656166682B04D7E40053B563 /* CourtDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtDetailsView.swift; sourceTree = "<group>"; };
+		6561666A2B04D7EC0053B563 /* EditCourtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCourtView.swift; sourceTree = "<group>"; };
+		6561666C2B04DD4C0053B563 /* CourtLocationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtLocationPickerView.swift; sourceTree = "<group>"; };
+		656B9AE12B078D3B006899A7 /* UserBookingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBookingProvider.swift; sourceTree = "<group>"; };
+		656CE9F92B0E367500074D1C /* CreateACourtUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateACourtUseCase.swift; sourceTree = "<group>"; };
+		656CE9FB2B0E3CA300074D1C /* CourtsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtsProvider.swift; sourceTree = "<group>"; };
+		656CE9FE2B0E408400074D1C /* StringTimestampToDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTimestampToDouble.swift; sourceTree = "<group>"; };
+		656CEA042B0E66B800074D1C /* GetAllCourtsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllCourtsUseCase.swift; sourceTree = "<group>"; };
+		656CEA062B0E744400074D1C /* UserAccountProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountProvider.swift; sourceTree = "<group>"; };
+		656CEA092B0E77F000074D1C /* CourtBookingsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtBookingsProvider.swift; sourceTree = "<group>"; };
+		656E09632B1CC389009F5022 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		6584DFB72AB05E7700F1F069 /* Padel Booking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Padel Booking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6584DFBA2AB05E7700F1F069 /* PadelBookingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadelBookingApp.swift; sourceTree = "<group>"; };
+		6584DFBC2AB05E7700F1F069 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		6584DFBE2AB05E7800F1F069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6584DFC12AB05E7800F1F069 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6584DFCB2AB0601500F1F069 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6584DFCD2AB0601E00F1F069 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		6584DFD02AB063F000F1F069 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		6584DFD22AB0685300F1F069 /* TextStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyles.swift; sourceTree = "<group>"; };
+		6584DFD42AB06BB200F1F069 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6584DFD62AB06BB800F1F069 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		6584DFD82AB0717E00F1F069 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		6584DFDA2AB072E300F1F069 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		6584DFDF2AB077E400F1F069 /* CourtOwnerTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtOwnerTabBarView.swift; sourceTree = "<group>"; };
+		6584DFE12AB0786C00F1F069 /* UserTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTabBarView.swift; sourceTree = "<group>"; };
+		6584DFE52AB07BF800F1F069 /* CourtOwnerBookingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtOwnerBookingsView.swift; sourceTree = "<group>"; };
+		6584DFE72AB07C0E00F1F069 /* CourtOwnerRequestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtOwnerRequestsView.swift; sourceTree = "<group>"; };
+		6584DFE92AB07C2300F1F069 /* UserBookingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBookingsView.swift; sourceTree = "<group>"; };
+		6584DFEB2AB07C3400F1F069 /* CourtOwnerAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtOwnerAccountView.swift; sourceTree = "<group>"; };
+		6584DFED2AB088B600F1F069 /* View+SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SafeArea.swift"; sourceTree = "<group>"; };
+		6584DFF92AB1B79200F1F069 /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		6584DFFB2AB1BBFC00F1F069 /* Date+DateFrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+DateFrom.swift"; sourceTree = "<group>"; };
+		6584DFFD2AB1C1F800F1F069 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		6584E0022AB1C24B00F1F069 /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
+		6584E0052AB1C35100F1F069 /* KeychainProvidable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainProvidable.swift; sourceTree = "<group>"; };
+		6584E0082AB1C3A600F1F069 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		6584E00A2AB1C42100F1F069 /* SessionOperable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionOperable.swift; sourceTree = "<group>"; };
+		6584E00D2AB1C45E00F1F069 /* UserDefaultsProvidable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsProvidable.swift; sourceTree = "<group>"; };
+		6584E0132AB1C59400F1F069 /* AcceptBookingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptBookingUseCase.swift; sourceTree = "<group>"; };
+		6584E0152AB1C5F600F1F069 /* RejectBookingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RejectBookingUseCase.swift; sourceTree = "<group>"; };
+		6584E0172AB1C60C00F1F069 /* EditBookingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBookingUseCase.swift; sourceTree = "<group>"; };
+		6584E0192AB1C88000F1F069 /* AppDependenciesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependenciesContainer.swift; sourceTree = "<group>"; };
+		6584E01B2AB1C94E00F1F069 /* CancelBookingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBookingUseCase.swift; sourceTree = "<group>"; };
+		6584E01D2AB1D7FE00F1F069 /* Court.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Court.swift; sourceTree = "<group>"; };
+		6584E01F2AB1E7DE00F1F069 /* UserBookingDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBookingDetailsView.swift; sourceTree = "<group>"; };
+		6584E0212AB3049F00F1F069 /* BookACourtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookACourtView.swift; sourceTree = "<group>"; };
+		6584E0232AB30F6000F1F069 /* CreateABookingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateABookingUseCase.swift; sourceTree = "<group>"; };
+		6584E0252AB3380500F1F069 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		65C286DB2BE51305002DFC1E /* AnimatedSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSecureTextField.swift; sourceTree = "<group>"; };
+		65C286DD2BE51483002DFC1E /* AnimatedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTextField.swift; sourceTree = "<group>"; };
+		65D6C1342B18F75A003B950F /* GetAllPendingBookingsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllPendingBookingsUseCase.swift; sourceTree = "<group>"; };
+		65D6C1372B19E7EC003B950F /* PendingBookingsProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingBookingsProviderProtocol.swift; sourceTree = "<group>"; };
+		65D6C1392B19EE34003B950F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		65EA9EDC2AB5B89900B54CE1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6584DFB42AB05E7700F1F069 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6584DFF12AB097B800F1F069 /* InfiniteCalendar in Frameworks */,
+				65906DB52AF6D223000E952E /* SkeletonUI in Frameworks */,
+				654202A22B001F89002AB115 /* PopupView in Frameworks */,
+				6584DFDE2AB0763900F1F069 /* SFSafeSymbols in Frameworks */,
+				6584E0012AB1C22B00F1F069 /* KeychainAccess in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		654202A32B0029D5002AB115 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				654202A42B0029DD002AB115 /* MapView.swift */,
+				654202A92B010A4C002AB115 /* MapRoutingSheetView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		654202A62B002C7B002AB115 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				654202A72B002C86002AB115 /* LocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		6561665A2B04C4640053B563 /* NetworkingLayer */ = {
+			isa = PBXGroup;
+			children = (
+				6584DFFD2AB1C1F800F1F069 /* NetworkingService.swift */,
+				6584E0022AB1C24B00F1F069 /* NetworkSession.swift */,
+				654202AD2B03FE55002AB115 /* APIRequest.swift */,
+			);
+			path = NetworkingLayer;
+			sourceTree = "<group>";
+		};
+		6561665B2B04C4740053B563 /* CourtOwnerProviders */ = {
+			isa = PBXGroup;
+			children = (
+				6561665D2B04C4C30053B563 /* CourtOwnerBookingProvider.swift */,
+				656166612B04C5AD0053B563 /* UpdateCourtProvider.swift */,
+			);
+			path = CourtOwnerProviders;
+			sourceTree = "<group>";
+		};
+		6561665C2B04C47E0053B563 /* UserProviders */ = {
+			isa = PBXGroup;
+			children = (
+				6561665F2B04C5610053B563 /* UserBookingsProvider.swift */,
+				656B9AE12B078D3B006899A7 /* UserBookingProvider.swift */,
+				656CEA062B0E744400074D1C /* UserAccountProvider.swift */,
+			);
+			path = UserProviders;
+			sourceTree = "<group>";
+		};
+		656166652B04D6090053B563 /* Courts */ = {
+			isa = PBXGroup;
+			children = (
+				656166662B04D6180053B563 /* CourtsListView.swift */,
+				656166682B04D7E40053B563 /* CourtDetailsView.swift */,
+				6561666C2B04DD4C0053B563 /* CourtLocationPickerView.swift */,
+				6561666A2B04D7EC0053B563 /* EditCourtView.swift */,
+			);
+			path = Courts;
+			sourceTree = "<group>";
+		};
+		656CE9F82B0E366700074D1C /* Court */ = {
+			isa = PBXGroup;
+			children = (
+				656CE9F92B0E367500074D1C /* CreateACourtUseCase.swift */,
+				656CEA042B0E66B800074D1C /* GetAllCourtsUseCase.swift */,
+			);
+			path = Court;
+			sourceTree = "<group>";
+		};
+		656CE9FD2B0E407900074D1C /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				656CE9FE2B0E408400074D1C /* StringTimestampToDouble.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		656CEA022B0E669300074D1C /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				650B258A2B0508E10058A665 /* LoginUseCase.swift */,
+				650B258D2B0567E90058A665 /* SignUpUseCase.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		656CEA032B0E66A000074D1C /* Bookings */ = {
+			isa = PBXGroup;
+			children = (
+				6584E0132AB1C59400F1F069 /* AcceptBookingUseCase.swift */,
+				6584E0152AB1C5F600F1F069 /* RejectBookingUseCase.swift */,
+				6584E01B2AB1C94E00F1F069 /* CancelBookingUseCase.swift */,
+				6584E0172AB1C60C00F1F069 /* EditBookingUseCase.swift */,
+				6584E0232AB30F6000F1F069 /* CreateABookingUseCase.swift */,
+				65D6C1342B18F75A003B950F /* GetAllPendingBookingsUseCase.swift */,
+			);
+			path = Bookings;
+			sourceTree = "<group>";
+		};
+		656CEA082B0E77E100074D1C /* CourtProviders */ = {
+			isa = PBXGroup;
+			children = (
+				656CE9FB2B0E3CA300074D1C /* CourtsProvider.swift */,
+				656CEA092B0E77F000074D1C /* CourtBookingsProvider.swift */,
+			);
+			path = CourtProviders;
+			sourceTree = "<group>";
+		};
+		6584DFAE2AB05E7700F1F069 = {
+			isa = PBXGroup;
+			children = (
+				6584DFB92AB05E7700F1F069 /* Padel Booking */,
+				6584DFB82AB05E7700F1F069 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6584DFB82AB05E7700F1F069 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6584DFB72AB05E7700F1F069 /* Padel Booking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6584DFB92AB05E7700F1F069 /* Padel Booking */ = {
+			isa = PBXGroup;
+			children = (
+				650B258C2B050B5B0058A665 /* Padel-Booking-Info.plist */,
+				6584DFF42AB1B56600F1F069 /* DataLayer */,
+				6584DFF72AB1B77F00F1F069 /* DomainLayer */,
+				6584DFCA2AB05ED400F1F069 /* UILayer */,
+				6584DFBE2AB05E7800F1F069 /* Assets.xcassets */,
+				6584DFC02AB05E7800F1F069 /* Preview Content */,
+			);
+			path = "Padel Booking";
+			sourceTree = "<group>";
+		};
+		6584DFC02AB05E7800F1F069 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6584DFC12AB05E7800F1F069 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6584DFC82AB05EC300F1F069 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				6584DFBC2AB05E7700F1F069 /* OnboardingView.swift */,
+				6584DFD42AB06BB200F1F069 /* LoginView.swift */,
+				6584DFD62AB06BB800F1F069 /* SignUpView.swift */,
+				6584DFDA2AB072E300F1F069 /* ForgotPasswordView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		6584DFC92AB05ECB00F1F069 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				6584DFE32AB0787500F1F069 /* CourtOwner */,
+				6584DFE42AB0787B00F1F069 /* User */,
+				6584DFEB2AB07C3400F1F069 /* CourtOwnerAccountView.swift */,
+				65EA9EDC2AB5B89900B54CE1 /* SettingsView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		6584DFCA2AB05ED400F1F069 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				65C286DA2BE512F8002DFC1E /* Components */,
+				6584DFBA2AB05E7700F1F069 /* PadelBookingApp.swift */,
+				6584E0192AB1C88000F1F069 /* AppDependenciesContainer.swift */,
+				6584DFCF2AB063E200F1F069 /* ExtensionsAndHelpers */,
+				6584DFC92AB05ECB00F1F069 /* TabBar */,
+				6584DFC82AB05EC300F1F069 /* Onboarding */,
+				6584DFCB2AB0601500F1F069 /* Images.xcassets */,
+				6584DFCD2AB0601E00F1F069 /* Colors.xcassets */,
+				654202942AFFCB53002AB115 /* AppState.swift */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		6584DFCF2AB063E200F1F069 /* ExtensionsAndHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				654202A32B0029D5002AB115 /* Map */,
+				6584DFD02AB063F000F1F069 /* ButtonStyles.swift */,
+				6584DFD22AB0685300F1F069 /* TextStyles.swift */,
+				6584DFD82AB0717E00F1F069 /* PasswordTextField.swift */,
+				6584DFED2AB088B600F1F069 /* View+SafeArea.swift */,
+				6584DFFB2AB1BBFC00F1F069 /* Date+DateFrom.swift */,
+				6584E0252AB3380500F1F069 /* Toast.swift */,
+				654202922AFFCA7B002AB115 /* NavigationUtil.swift */,
+				654202AB2B038D63002AB115 /* View+Placeholder.swift */,
+				650B25842B04E0840058A665 /* HourMinutePicker.swift */,
+				650B25862B04E54F0058A665 /* MultiImagePickerViewSwift.swift */,
+				650B25882B04EA730058A665 /* View+FocusablePadding.swift */,
+				650B258F2B056A9D0058A665 /* String+isValidEmail.swift */,
+				656E09632B1CC389009F5022 /* CustomSegmentedControl.swift */,
+			);
+			path = ExtensionsAndHelpers;
+			sourceTree = "<group>";
+		};
+		6584DFE32AB0787500F1F069 /* CourtOwner */ = {
+			isa = PBXGroup;
+			children = (
+				656166652B04D6090053B563 /* Courts */,
+				6584DFDF2AB077E400F1F069 /* CourtOwnerTabBarView.swift */,
+				6584DFE52AB07BF800F1F069 /* CourtOwnerBookingsView.swift */,
+				6584DFE72AB07C0E00F1F069 /* CourtOwnerRequestsView.swift */,
+			);
+			path = CourtOwner;
+			sourceTree = "<group>";
+		};
+		6584DFE42AB0787B00F1F069 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				6584DFE12AB0786C00F1F069 /* UserTabBarView.swift */,
+				6584DFE92AB07C2300F1F069 /* UserBookingsView.swift */,
+				6584E01F2AB1E7DE00F1F069 /* UserBookingDetailsView.swift */,
+				6584E0212AB3049F00F1F069 /* BookACourtView.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		6584DFF42AB1B56600F1F069 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				656CE9FD2B0E407900074D1C /* Mappers */,
+				654202A62B002C7B002AB115 /* Location */,
+				6584DFF62AB1B57A00F1F069 /* LocalStorage */,
+				6584DFF52AB1B56F00F1F069 /* Networking */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		6584DFF52AB1B56F00F1F069 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6584E0072AB1C38800F1F069 /* Session */,
+				6561665A2B04C4640053B563 /* NetworkingLayer */,
+				6561665C2B04C47E0053B563 /* UserProviders */,
+				6561665B2B04C4740053B563 /* CourtOwnerProviders */,
+				656166632B04C6740053B563 /* AuthenticationProvider.swift */,
+				656CEA082B0E77E100074D1C /* CourtProviders */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6584DFF62AB1B57A00F1F069 /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				6584E00C2AB1C43D00F1F069 /* UserDefaults */,
+				6584E0042AB1C31E00F1F069 /* Keychain */,
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		6584DFF72AB1B77F00F1F069 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+				65D6C1362B19E7DC003B950F /* ProviderProtocols */,
+				6584E00F2AB1C55800F1F069 /* Interactors */,
+				6584DFF82AB1B78B00F1F069 /* Entities */,
+				6584E0122AB1C58200F1F069 /* UseCases */,
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		6584DFF82AB1B78B00F1F069 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				6584DFF92AB1B79200F1F069 /* Booking.swift */,
+				6584E01D2AB1D7FE00F1F069 /* Court.swift */,
+				65D6C1392B19EE34003B950F /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		6584E0042AB1C31E00F1F069 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				6584E0052AB1C35100F1F069 /* KeychainProvidable.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		6584E0072AB1C38800F1F069 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				6584E0082AB1C3A600F1F069 /* Session.swift */,
+				6584E00A2AB1C42100F1F069 /* SessionOperable.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		6584E00C2AB1C43D00F1F069 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				6584E00D2AB1C45E00F1F069 /* UserDefaultsProvidable.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		6584E00F2AB1C55800F1F069 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		6584E0122AB1C58200F1F069 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				656CE9F82B0E366700074D1C /* Court */,
+				656CEA032B0E66A000074D1C /* Bookings */,
+				656CEA022B0E669300074D1C /* Authentication */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		65C286DA2BE512F8002DFC1E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				65C286DB2BE51305002DFC1E /* AnimatedSecureTextField.swift */,
+				65C286DD2BE51483002DFC1E /* AnimatedTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		65D6C1362B19E7DC003B950F /* ProviderProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				65D6C1372B19E7EC003B950F /* PendingBookingsProviderProtocol.swift */,
+			);
+			path = ProviderProtocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6584DFB62AB05E7700F1F069 /* Padel Booking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6584DFC52AB05E7800F1F069 /* Build configuration list for PBXNativeTarget "Padel Booking" */;
+			buildPhases = (
+				6584DFB32AB05E7700F1F069 /* Sources */,
+				6584DFB42AB05E7700F1F069 /* Frameworks */,
+				6584DFB52AB05E7700F1F069 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Padel Booking";
+			packageProductDependencies = (
+				6584DFDD2AB0763900F1F069 /* SFSafeSymbols */,
+				6584DFF02AB097B800F1F069 /* InfiniteCalendar */,
+				6584E0002AB1C22B00F1F069 /* KeychainAccess */,
+				65906DB42AF6D223000E952E /* SkeletonUI */,
+				654202A12B001F89002AB115 /* PopupView */,
+			);
+			productName = "Padel Booking";
+			productReference = 6584DFB72AB05E7700F1F069 /* Padel Booking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6584DFAF2AB05E7700F1F069 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6584DFB62AB05E7700F1F069 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 6584DFB22AB05E7700F1F069 /* Build configuration list for PBXProject "Padel Booking" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6584DFAE2AB05E7700F1F069;
+			packageReferences = (
+				6584DFDC2AB0763900F1F069 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+				6584DFEF2AB097B800F1F069 /* XCRemoteSwiftPackageReference "InfiniteCalendar" */,
+				6584DFFF2AB1C22B00F1F069 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				65906DB32AF6D223000E952E /* XCRemoteSwiftPackageReference "SkeletonUI" */,
+				654202A02B001F89002AB115 /* XCRemoteSwiftPackageReference "PopupView" */,
+			);
+			productRefGroup = 6584DFB82AB05E7700F1F069 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6584DFB62AB05E7700F1F069 /* Padel Booking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6584DFB52AB05E7700F1F069 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6584DFCC2AB0601500F1F069 /* Images.xcassets in Resources */,
+				6584DFCE2AB0601E00F1F069 /* Colors.xcassets in Resources */,
+				6584DFC22AB05E7800F1F069 /* Preview Assets.xcassets in Resources */,
+				6584DFBF2AB05E7800F1F069 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6584DFB32AB05E7700F1F069 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6561666B2B04D7EC0053B563 /* EditCourtView.swift in Sources */,
+				656166672B04D6180053B563 /* CourtsListView.swift in Sources */,
+				65C286DE2BE51483002DFC1E /* AnimatedTextField.swift in Sources */,
+				654202AC2B038D63002AB115 /* View+Placeholder.swift in Sources */,
+				65EA9EDD2AB5B89900B54CE1 /* SettingsView.swift in Sources */,
+				6584DFD32AB0685300F1F069 /* TextStyles.swift in Sources */,
+				656B9AE22B078D3B006899A7 /* UserBookingProvider.swift in Sources */,
+				6584DFFA2AB1B79200F1F069 /* Booking.swift in Sources */,
+				6584E00E2AB1C45E00F1F069 /* UserDefaultsProvidable.swift in Sources */,
+				6584E0222AB3049F00F1F069 /* BookACourtView.swift in Sources */,
+				656166642B04C6740053B563 /* AuthenticationProvider.swift in Sources */,
+				6584E0092AB1C3A600F1F069 /* Session.swift in Sources */,
+				6584DFE02AB077E400F1F069 /* CourtOwnerTabBarView.swift in Sources */,
+				6584DFBD2AB05E7700F1F069 /* OnboardingView.swift in Sources */,
+				65D6C13A2B19EE34003B950F /* User.swift in Sources */,
+				6584DFFE2AB1C1F800F1F069 /* NetworkingService.swift in Sources */,
+				650B25872B04E54F0058A665 /* MultiImagePickerViewSwift.swift in Sources */,
+				6584DFE62AB07BF800F1F069 /* CourtOwnerBookingsView.swift in Sources */,
+				6584DFEC2AB07C3400F1F069 /* CourtOwnerAccountView.swift in Sources */,
+				6584DFE22AB0786C00F1F069 /* UserTabBarView.swift in Sources */,
+				65D6C1382B19E7EC003B950F /* PendingBookingsProviderProtocol.swift in Sources */,
+				656CEA072B0E744400074D1C /* UserAccountProvider.swift in Sources */,
+				650B25902B056A9D0058A665 /* String+isValidEmail.swift in Sources */,
+				656CE9FC2B0E3CA300074D1C /* CourtsProvider.swift in Sources */,
+				6584E01E2AB1D7FE00F1F069 /* Court.swift in Sources */,
+				6584DFDB2AB072E300F1F069 /* ForgotPasswordView.swift in Sources */,
+				654202AA2B010A4C002AB115 /* MapRoutingSheetView.swift in Sources */,
+				656CEA0A2B0E77F000074D1C /* CourtBookingsProvider.swift in Sources */,
+				654202A52B0029DD002AB115 /* MapView.swift in Sources */,
+				6584E01A2AB1C88000F1F069 /* AppDependenciesContainer.swift in Sources */,
+				656E09642B1CC389009F5022 /* CustomSegmentedControl.swift in Sources */,
+				6584DFE82AB07C0E00F1F069 /* CourtOwnerRequestsView.swift in Sources */,
+				6561665E2B04C4C30053B563 /* CourtOwnerBookingProvider.swift in Sources */,
+				654202932AFFCA7B002AB115 /* NavigationUtil.swift in Sources */,
+				656CEA052B0E66B800074D1C /* GetAllCourtsUseCase.swift in Sources */,
+				65D6C1352B18F75A003B950F /* GetAllPendingBookingsUseCase.swift in Sources */,
+				6584DFD92AB0717E00F1F069 /* PasswordTextField.swift in Sources */,
+				654202AE2B03FE55002AB115 /* APIRequest.swift in Sources */,
+				6584DFD12AB063F000F1F069 /* ButtonStyles.swift in Sources */,
+				6584E0182AB1C60C00F1F069 /* EditBookingUseCase.swift in Sources */,
+				656CE9FF2B0E408400074D1C /* StringTimestampToDouble.swift in Sources */,
+				656166622B04C5AD0053B563 /* UpdateCourtProvider.swift in Sources */,
+				656CE9FA2B0E367500074D1C /* CreateACourtUseCase.swift in Sources */,
+				6584E0262AB3380500F1F069 /* Toast.swift in Sources */,
+				6584DFD52AB06BB200F1F069 /* LoginView.swift in Sources */,
+				6584E00B2AB1C42100F1F069 /* SessionOperable.swift in Sources */,
+				6584DFD72AB06BB800F1F069 /* SignUpView.swift in Sources */,
+				6584E01C2AB1C94E00F1F069 /* CancelBookingUseCase.swift in Sources */,
+				6584E0162AB1C5F600F1F069 /* RejectBookingUseCase.swift in Sources */,
+				6584E0242AB30F6000F1F069 /* CreateABookingUseCase.swift in Sources */,
+				6584E0202AB1E7DF00F1F069 /* UserBookingDetailsView.swift in Sources */,
+				6584DFEA2AB07C2300F1F069 /* UserBookingsView.swift in Sources */,
+				654202952AFFCB53002AB115 /* AppState.swift in Sources */,
+				6584DFFC2AB1BBFC00F1F069 /* Date+DateFrom.swift in Sources */,
+				6584E0032AB1C24B00F1F069 /* NetworkSession.swift in Sources */,
+				65C286DC2BE51305002DFC1E /* AnimatedSecureTextField.swift in Sources */,
+				650B258E2B0567E90058A665 /* SignUpUseCase.swift in Sources */,
+				650B25852B04E0840058A665 /* HourMinutePicker.swift in Sources */,
+				6584DFBB2AB05E7700F1F069 /* PadelBookingApp.swift in Sources */,
+				6584DFEE2AB088B600F1F069 /* View+SafeArea.swift in Sources */,
+				6584E0062AB1C35100F1F069 /* KeychainProvidable.swift in Sources */,
+				650B25892B04EA730058A665 /* View+FocusablePadding.swift in Sources */,
+				6584E0142AB1C59400F1F069 /* AcceptBookingUseCase.swift in Sources */,
+				654202A82B002C86002AB115 /* LocationManager.swift in Sources */,
+				6561666D2B04DD4C0053B563 /* CourtLocationPickerView.swift in Sources */,
+				656166692B04D7E40053B563 /* CourtDetailsView.swift in Sources */,
+				656166602B04C5610053B563 /* UserBookingsProvider.swift in Sources */,
+				650B258B2B0508E10058A665 /* LoginUseCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6584DFC32AB05E7800F1F069 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6584DFC42AB05E7800F1F069 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6584DFC62AB05E7800F1F069 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Padel Booking/Preview Content\"";
+				DEVELOPMENT_TEAM = 45ZPSW47B3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Padel-Booking-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.paddelapp.mvp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6584DFC72AB05E7800F1F069 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Padel Booking/Preview Content\"";
+				DEVELOPMENT_TEAM = 45ZPSW47B3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Padel-Booking-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.paddelapp.mvp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6584DFB22AB05E7700F1F069 /* Build configuration list for PBXProject "Padel Booking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6584DFC32AB05E7800F1F069 /* Debug */,
+				6584DFC42AB05E7800F1F069 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6584DFC52AB05E7800F1F069 /* Build configuration list for PBXNativeTarget "Padel Booking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6584DFC62AB05E7800F1F069 /* Debug */,
+				6584DFC72AB05E7800F1F069 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		654202A02B001F89002AB115 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.2;
+			};
+		};
+		6584DFDC2AB0763900F1F069 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SFSafeSymbols/SFSafeSymbols.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		6584DFEF2AB097B800F1F069 /* XCRemoteSwiftPackageReference "InfiniteCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shohe/InfiniteCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.14;
+			};
+		};
+		6584DFFF2AB1C22B00F1F069 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		65906DB32AF6D223000E952E /* XCRemoteSwiftPackageReference "SkeletonUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CSolanaM/SkeletonUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		654202A12B001F89002AB115 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 654202A02B001F89002AB115 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+		6584DFDD2AB0763900F1F069 /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6584DFDC2AB0763900F1F069 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+		6584DFF02AB097B800F1F069 /* InfiniteCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6584DFEF2AB097B800F1F069 /* XCRemoteSwiftPackageReference "InfiniteCalendar" */;
+			productName = InfiniteCalendar;
+		};
+		6584E0002AB1C22B00F1F069 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6584DFFF2AB1C22B00F1F069 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		65906DB42AF6D223000E952E /* SkeletonUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65906DB32AF6D223000E952E /* XCRemoteSwiftPackageReference "SkeletonUI" */;
+			productName = SkeletonUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6584DFAF2AB05E7700F1F069 /* Project object */;
+}
